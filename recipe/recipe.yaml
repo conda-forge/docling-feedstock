@@ -1,6 +1,6 @@
 context:
   name: docling
-  version: "2.16.0"
+  version: "2.17.0"
   python_min: "3.10"
 
 package:
@@ -9,7 +9,7 @@ package:
 
 source:
   url: https://pypi.org/packages/source/${{ name[0] }}/${{ name }}/docling-${{ version }}.tar.gz
-  sha256: 578f9ba711399d6422ba4ba98ef5dea3787e13bc61702a7bcf6ce1b36778a003
+  sha256: 5a73e946b8f802deacb12e7b18e8aafb34b97a768f9d2398856b437849845648
 
 build:
   number: 0
@@ -48,7 +48,7 @@ requirements:
     - marko >=2.1.2,<3.0.0
     - openpyxl >=3.1.5,<4.0.0
     - lxml >=4.0.0,<6.0.0
-    - onnxruntime >=1.7.0,<1.20.0
+    - onnxruntime >=1.7.0,<2.0.0
     - pillow >=10.0.0,<11.0.0
 
   run_constraints:
