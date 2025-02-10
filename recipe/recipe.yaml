@@ -1,6 +1,6 @@
 context:
   name: docling
-  version: "2.20.0"
+  version: "2.21.0"
   python_min: "3.10"
 
 package:
@@ -9,7 +9,7 @@ package:
 
 source:
   url: https://pypi.org/packages/source/${{ name[0] }}/${{ name }}/docling-${{ version }}.tar.gz
-  sha256: aeec56cf9af4eeed3f0f2fd63f2f6ade66e9d84ba595a6a71237b9b430f0452e
+  sha256: bd9a4636692a52c27b40300f5b1017f9a9c4a09fad861a3d3f177264bd8331b1
 
 build:
   number: 0
@@ -27,7 +27,7 @@ requirements:
   run:
     - python >=${{ python_min }}
     - pydantic >=2.0.0,<3.0.0
-    - docling-core >=2.17.2,<3.0.0
+    - docling-core >=2.18.0,<3.0.0
     - docling-ibm-models >=3.3.0,<4.0.0
     - deepsearch-glm >=1.0.0,<2.0.0
     - docling-parse >=3.3.0,<4.0.0
