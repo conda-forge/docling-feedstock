@@ -27,7 +27,7 @@ requirements:
   run:
     - python >=${{ python_min }}
     - pydantic >=2.0.0,<3.0.0
-    - docling-core >=2.17.2,<3.0.0
+    - docling-core >=2.18.0,<3.0.0
     - docling-ibm-models >=3.3.0,<4.0.0
     - deepsearch-glm >=1.0.0,<2.0.0
     - docling-parse >=3.3.0,<4.0.0
@@ -61,7 +61,7 @@ tests:
         - docling
       # `pip check` fails because:
       # - "scikit-image 0.24.0 has requirement numpy>=1.23, but you have numpy 1.22.4."
-      pip_check: false
+      pip_check: true
       python_version: ${{ python_min }}.*
   - script:
       - docling --help
