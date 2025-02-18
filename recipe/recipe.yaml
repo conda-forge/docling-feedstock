@@ -27,7 +27,7 @@ requirements:
   run:
     - python >=${{ python_min }}
     - pydantic >=2.0.0,<3.0.0
-    - docling-core >=2.18.0,<3.0.0
+    - docling-core >=2.19.0,<3.0.0
     - docling-ibm-models >=3.3.0,<4.0.0
     - deepsearch-glm >=1.0.0,<2.0.0
     - docling-parse >=3.3.0,<4.0.0
