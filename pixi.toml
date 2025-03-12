@@ -4,7 +4,7 @@
 
 [project]
 name = "docling-feedstock"
-version = "3.46.1"
+version = "3.47.0"
 description = "Pixi configuration for conda-forge/docling-feedstock"
 authors = ["@conda-forge/docling"]
 channels = ["conda-forge"]
