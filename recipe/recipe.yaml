@@ -1,6 +1,6 @@
 context:
   name: docling
-  version: "2.76.0"
+  version: "2.77.0"
   python_min: '3.10'
 
 package:
@@ -9,7 +9,7 @@ package:
 
 source:
   url: https://pypi.org/packages/source/${{ name[0] }}/${{ name }}/docling-${{ version }}.tar.gz
-  sha256: c942ecbf3254c63d6853edc6cc439ce3ca4f71e469983272b579cf9a197e9356
+  sha256: d410e9a4f457951f9da43a2ed2e6103747d60494f5e75ac64c54038d57ef903d
 
 build:
   number: 0
