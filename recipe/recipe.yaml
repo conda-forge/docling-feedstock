@@ -2,7 +2,7 @@ schema_version: 1
 
 context:
   name: docling
-  version: "2.91.0"
+  version: "2.93.0"
   python_min: '3.10'
 
 recipe:
@@ -11,16 +11,16 @@ recipe:
 
 source:
   url: https://pypi.org/packages/source/${{ name[0] }}/${{ name }}/docling-${{ version }}.tar.gz
-  sha256: c37fa0957e63a784753a4d43fc1271caa869d883a8354d556ee6d52a3046929e
+  sha256: c8b4455466d9a6314c27cf84debfdf491532298f65364ec3449acaad517bfea6
 
 build:
-  number: 1
+  number: 0
 
 outputs:
   - package:
       name: ${{ name }}-slim
     build:
-      number: 1
+      number: 0
       noarch: python
       script: ${{ PYTHON }} -m pip install . -vv --no-deps --no-build-isolation
       python:
@@ -51,7 +51,7 @@ outputs:
   - package:
       name: ${{ name }}
     build:
-      number: 1
+      number: 0
       noarch: python
     requirements:
       host:
