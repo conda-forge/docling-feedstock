@@ -29,7 +29,6 @@ outputs:
     requirements:
       host:
         - python ${{ python_min }}.*
-        - poetry-core
         - pip
         - hatchling
       run:
