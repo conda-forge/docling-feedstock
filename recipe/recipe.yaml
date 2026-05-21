@@ -11,7 +11,7 @@ recipe:
 
 source:
   url: https://pypi.org/packages/source/d/docling-slim/docling_slim-${{ version }}.tar.gz
-  sha256: 7c79c1bbafc91266bd33f682274ed39de2474e4c126d0ed26400da192de43293
+  sha256: f7df4576c3e5810d0b801c1e930821c618da56e44ec315f13f66022064dcba24
 
 build:
   number: 0
