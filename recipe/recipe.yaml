@@ -10,8 +10,8 @@ recipe:
   version: ${{ version }}
 
 source:
-  url: https://pypi.org/packages/source/${{ name[0] }}/${{ name }}/docling-${{ version }}.tar.gz
-  sha256: e8e393ce1a9520c6a61acc67977a6c2d7c2588d98c7446a935b01f9877af9f93
+  url: https://pypi.org/packages/source/d/docling-slim/docling_slim-${{ version }}.tar.gz
+  sha256: f54a2159a46cf00f4738888594c5a81372048d8a0d1a15dd279a7390641a04fa
 
 build:
   number: 0
