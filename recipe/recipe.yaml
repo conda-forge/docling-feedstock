@@ -10,8 +10,8 @@ recipe:
   version: ${{ version }}
 
 source:
-  url: https://pypi.org/packages/source/${{ name[0] }}/${{ name }}/docling-${{ version }}.tar.gz
-  sha256: 13b87660a5f7d96a85e863da631bbf83e6496bd74ef5e950ca780dacdbe82b48
+  url: https://pypi.org/packages/source/d/docling-slim/docling_slim-${{ version }}.tar.gz
+  sha256: 4e5ba7972b7d13220a029cd9988d4b1ef638e3961c7912b86dc4377fea7842f8
 
 build:
   number: 0
@@ -29,8 +29,8 @@ outputs:
     requirements:
       host:
         - python ${{ python_min }}.*
-        - poetry-core
         - pip
+        - hatchling
       run:
         - python >=${{ python_min }}
         - pydantic >=2.0.0,<3.0.0
