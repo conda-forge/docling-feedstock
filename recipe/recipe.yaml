@@ -2,7 +2,7 @@ schema_version: 1
 
 context:
   name: docling
-  version: "2.91.0"
+  version: "2.92.0"
   python_min: '3.10'
 
 recipe:
@@ -10,17 +10,17 @@ recipe:
   version: ${{ version }}
 
 source:
-  url: https://pypi.org/packages/source/${{ name[0] }}/${{ name }}/docling-${{ version }}.tar.gz
-  sha256: c37fa0957e63a784753a4d43fc1271caa869d883a8354d556ee6d52a3046929e
+  url: https://pypi.org/packages/source/d/docling-slim/docling_slim-${{ version }}.tar.gz
+  sha256: f54a2159a46cf00f4738888594c5a81372048d8a0d1a15dd279a7390641a04fa
 
 build:
-  number: 1
+  number: 0
 
 outputs:
   - package:
       name: ${{ name }}-slim
     build:
-      number: 1
+      number: 0
       noarch: python
       script: ${{ PYTHON }} -m pip install . -vv --no-deps --no-build-isolation
       python:
@@ -29,8 +29,8 @@ outputs:
     requirements:
       host:
         - python ${{ python_min }}.*
-        - poetry-core
         - pip
+        - hatchling
       run:
         - python >=${{ python_min }}
         - pydantic >=2.0.0,<3.0.0
@@ -51,7 +51,7 @@ outputs:
   - package:
       name: ${{ name }}
     build:
-      number: 1
+      number: 0
       noarch: python
     requirements:
       host:
