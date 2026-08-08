@@ -41,31 +41,73 @@ conda config --add channels conda-forge
 conda config --set channel_priority strict
 ```
 
-Once the `conda-forge` channel has been enabled, `docling, docling-slim` can be installed with `conda`:
+How to use
+----------
+
+<details>
+<summary>With conda</summary>
 
 ```
 conda install docling docling-slim
 ```
 
-or with `mamba`:
+</details>
+
+<details>
+<summary>With mamba</summary>
 
 ```
 mamba install docling docling-slim
 ```
 
-It is possible to list all of the versions of `docling` available on your platform with `conda`:
+</details>
+
+<details>
+<summary>With pixi</summary>
+
+```
+# for adding to your local project
+pixi add docling docling-slim
+# for installing globally
+pixi global install docling docling-slim
+```
+
+</details>
+
+Search package versions
+-----------------------
+
+It is possible to list all of the versions of `docling` available on your platform:
+
+<details>
+<summary>With conda</summary>
 
 ```
 conda search docling --channel conda-forge
 ```
 
-or with `mamba`:
+</details>
+
+<details>
+<summary>With mamba</summary>
 
 ```
 mamba search docling --channel conda-forge
 ```
 
-Alternatively, `mamba repoquery` may provide more information:
+</details>
+
+<details>
+<summary>With pixi</summary>
+
+```
+pixi search docling --channel conda-forge
+```
+
+</details>
+
+<details>
+<summary>With mamba repoquery, which may provide more information</summary>
 
 ```
 # Search all versions available on your platform:
@@ -77,6 +119,8 @@ mamba repoquery whoneeds docling --channel conda-forge
 # List dependencies of `docling`:
 mamba repoquery depends docling --channel conda-forge
 ```
+
+</details>
 
 
 About conda-forge
