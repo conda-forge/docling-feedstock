@@ -2,7 +2,7 @@ schema_version: 1
 
 context:
   name: docling
-  version: "2.120.1"
+  version: "2.120.2"
   python_min: '3.10'
 
 recipe:
@@ -11,7 +11,7 @@ recipe:
 
 source:
   url: https://pypi.org/packages/source/d/docling-slim/docling_slim-${{ version }}.tar.gz
-  sha256: 451622619c08fa75cb9fc7a4deb3c2f165be33503d46226f4c63024a863be64c
+  sha256: 2b50810dbf4fb94eefede35c2893ca0a473ffe7515ca041812d82833d7eb5fc4
 
 build:
   number: 0
